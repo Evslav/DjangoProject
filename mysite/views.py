@@ -16,10 +16,10 @@ def index(request):
         form.save()
     return render(request, 'landing/index.html', locals())
 
-def uinfo(request):
+def uInfo(request):
     ua = request.META['HTTP_USER_AGENT']
     ip = request.META['REMOTE_ADDR']
     now = datetime.datetime.now()
     data = now.strftime("%d-%m-%Y %H:%M")
     return render(request, 'landing/uinfo.html', locals())
-# Create your views here.
+

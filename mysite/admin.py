@@ -7,8 +7,7 @@ class leadAdmin (admin.ModelAdmin):
 
     class Meta:
         model = lead
-        model = uinfo
 
 admin.site.register(lead, leadAdmin)
-
+admin.site.register(uinfo)
 # Register your models here.
